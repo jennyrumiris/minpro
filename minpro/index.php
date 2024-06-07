@@ -58,7 +58,6 @@ $diadakanTahunIniResult = $conn->query($diadakanTahunIniSql);
         <table>
             <tr>
                 <td><p id="diadakan">Diadakan Bulan Ini</p></td>
-                <td><p id="pencariantiket">Pencarian Tiket</p></td>
             </tr>
             <tr>
                 <td>
@@ -101,27 +100,9 @@ $diadakanTahunIniResult = $conn->query($diadakanTahunIniSql);
                         </div>
                     </div>
                 </td>
-                <td>
-                    <form action="/hasil-pencarian" method="get" class="filter">
-                        <div class="fillokasi">
-                            <label for="fillokasi">Lokasi Pertunjukan:</label>
-                            <input type="text" id="lokasi" name="lokasi" placeholder="lokasi">
-                        </div>
-                        <div class="filartis">
-                            <label for="artis">Nama Artis:</label>
-                            <input type="text" id="artis" name="artis" placeholder="artis">
-                        </div>
-                        <div class="filtanggal">
-                            <label for="tanggal">Tanggal Pertunjukan:</label>
-                            <input type="date" id="tanggal" name="tanggal">
-                        </div>
-                        <button type="submit">Cari</button>
-                    </form>
-                </td>
             </tr>
             <tr>
                 <td><p id="diadakan">Diadakan Tahun Ini</p></td>
-                <td><p id="artistop">Artis yang Lagi Top</p></td>
             </tr>
             <tr>
                 <td>
@@ -162,27 +143,6 @@ $diadakanTahunIniResult = $conn->query($diadakanTahunIniSql);
                             }
                             ?>
                         </div>
-                    </div>
-                </td>
-                <td>
-                    <div class="vertical-menu">
-                        <?php
-                        // Uncomment and adjust the following code when the artist query and results are ready
-                        // if ($artisTopResult->num_rows > 0) {
-                        //     while($row = $artisTopResult->fetch_assoc()) {
-                        //         echo "<a href='#'>";
-                        //         echo "<img src='" . $row["image_path"] . "' alt='" . $row["artist_name"] . "'>";
-                        //         echo "<div class='artist-info'>";
-                        //         echo "<span class='artist-name'>" . $row["artist_name"] . "</span>";
-                        //         echo "<span class='ticket-sales'>" . $row["ticket_sales"] . " tiket terjual</span>";
-                        //         echo "<span class='concert-name'>" . $row["concert_name"] . "</span>";
-                        //         echo "</div>";
-                        //         echo "</a>";
-                        //     }
-                        // } else {
-                        //     echo "<p>Tidak ada artis top saat ini</p>";
-                        // }
-                        ?>
                     </div>
                 </td>
             </tr>
