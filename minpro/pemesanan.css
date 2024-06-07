@@ -1,0 +1,399 @@
+header {
+  background-color: rgb(97, 10, 10);
+  padding: 50px 45px 50px 0px;
+  color: white;
+  position: sticky;
+  top: 0px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  
+}
+
+.atas{
+position: relative;
+}
+
+/* Style the search field */
+.search input[type=text] {
+padding: 4px;
+margin-top: 15px;
+font-size: 15px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+background-color: rgb(231, 227, 227);
+width: 55%;
+border: solid;
+}
+/* Gaya searchbox di dalam bilah navigasi */
+/* .topnav input[type=text] {
+float: right;
+padding: 6px;
+border: none;
+margin-top: 8px;
+margin-right: 16px;
+font-size: 17px;
+border-radius: 5px;
+} */
+
+/* Style the submit button */
+.search button {
+background: rgb(231, 227, 227);
+color: rgb(97, 10, 10);
+font-size: 9px;
+position: relative;
+right: 7px;
+bottom: 1.7px;
+border: solid;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+
+
+.search button:hover {
+background: grey;
+}
+
+
+
+.topnav ::placeholder{
+font-size: 13px;
+}
+
+
+.logo img{
+  width: 80px;
+  height: 80px;
+  clip-path: circle();
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  margin-left: 0;
+}
+  /* Tambahkan warna latar belakang hitam ke bilah navigasi atas */
+  .topnav {
+
+    overflow: hidden;
+    background-color: white;
+    border-radius: 7px;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 0;
+    left: 130px;
+  
+  }
+  
+  /* Style link di dalam bilah navigasi */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 13px;
+  
+  }
+  
+  /* Ubah warna link saat mengarahkan kursor */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* gaya kategori didalam bilah navigasi */
+  .topnav select{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgb(231, 227, 227);
+    margin-right: 125px;
+    font-size: 13px;
+  }
+  input, button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+/* MENGATUR APAPUN YANG ADA DIDALAM MAIN */
+main{
+    background-color: #113946; 
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+/* MENGATUR BOTTOM BACK */
+.back{
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.back a{
+    color: white;
+    text-decoration: none;
+    background-color: #376575;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+/* MEMBUAT JIKA CURSOR DI GESER BERUBAH WARNA */
+.back a:hover{
+    background-color: rgb(107, 199, 239);
+}
+
+#keterangan{
+    background-color: #21657c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 700px;
+    height:400px;
+    margin-left: calc((100% - 700px) / 2);
+}
+
+#keterangan h3{
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* mengatur gambar tiket */
+#keterangan img{
+    width: 480px;
+    position: relative;
+    display: block;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* UNTUK MENGATUR TGL, JAM, DAN LOKASI */
+.detail-icon {
+    display: flex;
+    align-items: center;
+    line-height: 0.2;
+}
+
+/* UNTUK MENGATUR POSISI TGL, WAKTU, DAN LOKASI */
+.detail-icon .icon {
+    font-size: 20px; /* Sesuaikan ukuran ikon */
+    padding-left: 20px;
+}
+
+/* untuk mebuat link maps pada alamat */
+.detail-icon a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* untuk membuat perbedaan jika corsur berada dikalimat tersebut */
+.detail-icon a:hover :not(.icon){
+    text-decoration: underline; /*untuk membuat garis bawah pada text*/
+    color: #0a3a6d;
+}
+
+
+/* MENGATUR APAPUN YANG ADA DI DALAM KOTAK FORM */
+.form {
+    width: 40%;
+    margin-top: 50px;
+    background-color: #21657c;
+    padding: 20px;
+    margin-left: calc((100% - 45%) / 2); /* UNTUK MEMBUAT POSISINYA BERADA DITENGAH DAN JIKA DIZOOM TIDAK BERUBAH POSISI*/
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input{
+    padding: 10px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px;
+}
+
+.form-group1 input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+/* MEMBUAT BOTTOM PESAN TIKET UNTUK SUBMIT */
+.form button {
+    display: inline;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+footer{
+    background-color: rgb(97, 10, 10);
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: white;
+}
+  
+  footer img{
+    clip-path: circle();
+    width: 80px;
+}
+
+/* logo di footer */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.social-icons .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.whatsapp {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png');
+    margin-right: 20px;
+}
+
+.facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png');
+    margin-right: 20px;
+}
+
+.tiktok {
+    background-image: url('https://upload.wikimedia.org/wikipedia/id/a/a9/TikTok_logo.svg');
+    margin-right: 20px;
+}
+
+.telegram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg');
+    margin-right: 20px;
+}
+
+/* Style untuk container nomor telepon */
+.phone-number {
+    display: flex;
+    align-items: center;
+}
+
+/* Style untuk kode negara */
+.phone-number span {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: white;
+    border: 1px solid white;
+    border-right: none;
+}
+
+/* Style untuk input nomor telepon */
+.phone-number input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/* Style untuk simbol pemisah nomor telepon */
+.phone-number .separator {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: white;
+    border: 1px solid white;
+    border-left: none; /* Menghapus border di sisi kiri */
+}
+
+.notification {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  #notification-toggle:focus + #notification {
+    display: block;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }

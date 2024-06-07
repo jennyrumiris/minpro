@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pemesanan.css">
+    <title>Pemesanan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="atas">
+          <a href="index.php" class="logo"></s><img src="konser.jpg" alt=""></a>
+          <div class="topnav">
+            <!-- <a class="active" href="#home">Home</a> -->
+            <a href="">login</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <select name="Kategori" id="kategori">
+              <option value='populer'>Populer</option>
+              <option value='on going'>On Going</option>
+              <option value='terdekat'>Terdekat</option>
+            </select>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <form class="search" action="action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </header>
+    <main>
+        <!-- Membuat back -->
+        <div class="back">
+            <a href="detail.html"> << Back </a>
+        </div>
+        <!-- deskripsi yang di dalam kotak biru -->
+        <div id="keterangan">
+            <h3>Jesse Barrera & Albert Posis - The Hold On Tight Tour</h3>
+            <img src="tiketdetail1.jpg" alt="tiket">
+            <!-- Kalender -->
+            <div class="detail">
+            <div class="detail-icon">
+                <span class="icon">&#128197;</span>
+                <p class="tgl-konser">23 Mei 2024</p>
+            </div>
+            <!-- Jam -->
+            <div class="detail-icon">
+                <span class="icon">&#128339;</span>
+                <p>19.00 - 22.00 WIB</p>
+            </div>
+            <!-- Lokasi -->
+            <div class="detail-icon">
+                <!-- <span class="icon">&#128204;</span> -->
+                <a href="https://www.google.com/maps/place/The+Kasablanka/@-6.223651,106.8402387,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f38cc147f145:0x3225ec9b7b7adc0c!8m2!3d-6.223651!4d106.8428136!16s%2Fg%2F11c0pzwnp5?entry=ttu" class="icon">&#128204;</a>
+                <a href="https://www.google.com/maps/place/The+Kasablanka/@-6.223651,106.8402387,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f38cc147f145:0x3225ec9b7b7adc0c!8m2!3d-6.223651!4d106.8428136!16s%2Fg%2F11c0pzwnp5?entry=ttu">
+                <p>Aruba Hall, The Kasablanka, DKI Jakarta</p>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="form">
+            <h1>Form Pembelian Tiket Konser</h1>
+            <form id="ticketForm">
+                <div class="form-group" action="#" method="post">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="nomor">No.Hp:</label>
+                    <div class="phone-number">
+                        <span>+62</span>
+                        <input type="text" id="nomor" name="nomor" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Lahir:</label>
+                    <input type="date" name="tanggal" id="tanggalId" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group1">
+                    <label for="jenis-kelamin">Jenis Kelamin:</label>
+                    <input type="radio" name="kategori" value="1">Laki-Laki
+                    <input type="radio" name="kategori" value="2">Perempuan
+                    <input type="radio" name="kategori" value="3">Lainnya
+                </div>
+                <button type="submit" id="notification-toggle" class="button" onclick="alert('Tiket Sudah di Pesan')" >Pesan Tiket</button>
+                  </div>
+            </form>
+    </main>
+    <footer>
+        <img src="konser.jpg" alt="seru">
+        <p>&copy; 2024 Konser Live. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send?phone=6281234567890" class="icon whatsapp"></a>
+            <a href="https://www.instagram.com/carolimanuella/" class="icon instagram"></a>
+            <a href="#" class="icon facebook"></a>
+            <a href="#" class="icon tiktok"></a>
+            <a href="#" class="icon telegram"></a>
+        </div>
+      </footer>
+</body>
+</html>

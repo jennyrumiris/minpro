@@ -1,0 +1,362 @@
+main {
+  background-color: #113946;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Tambahkan flex-direction: column agar elemen di dalam main tersusun secara vertikal */
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+header {
+  background-color: rgb(97, 10, 10);
+  padding: 50px 45px 50px 0px;
+  color: white;
+  position: sticky;
+  top: 0px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.atas {
+  position: relative;
+}
+
+/* Style the search field */
+.search input[type=text] {
+  padding: 4px;
+  margin-top: 15px;
+  font-size: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: rgb(231, 227, 227);
+  width: 55%;
+  border: solid;
+}
+
+/* Style the submit button */
+.search button {
+  background: rgb(231, 227, 227);
+  color: rgb(97, 10, 10);
+  font-size: 9px;
+  position: relative;
+  right: 7px;
+  bottom: 1.7px;
+  border: solid;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.search button:hover {
+  background: grey;
+}
+
+.topnav ::placeholder {
+  font-size: 13px;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  clip-path: circle();
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  margin-left: 0;
+}
+
+/* Tambahkan warna latar belakang hitam ke bilah navigasi atas */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 7px;
+  position: absolute;
+  transform: translateY(-50%);
+  right: 0;
+  left: 130px;
+}
+
+/* Style link di dalam bilah navigasi */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Ubah warna link saat mengarahkan kursor */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* gaya kategori didalam bilah navigasi */
+.topnav select {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: rgb(231, 227, 227);
+  margin-right: 125px;
+  font-size: 13px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.slides::-webkit-scrollbar {
+  width: 100%;
+  height: 100%;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 320px;
+  height: 340px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: rgb(251, 236, 236);
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding-bottom: 30px;
+  box-shadow: 5px 5px 10px rgb(1, 1, 1);
+  margin-bottom: 10px;
+  z-index: 0;
+}
+
+.slides > div img {
+  width: 100%;
+  height: 234px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover; /* Ensures the image covers the box without stretching */
+}
+
+.slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+
+.slider {
+  width: 800px;
+  position: relative;
+  margin: 0 auto; /* Center the slider */
+  text-align: center;
+  overflow: hidden;
+}
+
+/* vertical menu top artis */
+.vertical-menu {
+  width: 250px;
+  overflow-y: auto;
+  margin-left: 50px;
+  height: 380px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  scrollbar-width: thin; /* Menyesuaikan lebar scrollbar */
+  scrollbar-color: #BCA37F #ddd;
+}
+
+#artistop {
+  padding-left: 50px;
+  margin-bottom: 0px;
+  color: #EAD7BB;
+  margin-left: 10px;
+}
+
+/* Add styles for new time and day information */
+#diadakan,
+#pencariantiket,
+#artistop {
+  color: #EAD7BB;
+  margin-left: 10px;
+}
+
+#waktu,
+#hari {
+  color: gray;
+}
+
+.vertical-menu a {
+  background-color: rgb(251, 236, 236);
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #FFF2D8;
+}
+
+.vertical-menu img {
+  width: 40px;
+  height: 60px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-name {
+  padding-bottom: 5px;
+  color: black;
+}
+
+.ticket-sales {
+  font-size: 12px;
+  color: gray; /* Warna abu-abu untuk jumlah penjualan */
+}
+
+#namakonser {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#harga {
+  color: green;
+}
+
+#tanggal {
+  color: gray;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+button {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.filter {
+  width: 210px;
+  height: 340px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(251, 236, 236);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fillokasi {
+  padding-top: 40px;
+}
+
+.filter button {
+  background-color: #ccc;
+}
+
+#pencariantiket {
+  margin-left: 50px;
+  color: #EAD7BB;
+}
+
+.slides a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  background-color: rgb(97, 10, 10);
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  color: white;
+}
+
+footer img {
+  clip-path: circle();
+  width: 80px;
+}
+
+/* logo di footer */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.social-icons .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.whatsapp {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
+.instagram {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png');
+  margin-right: 20px;
+}
+
+.facebook {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png');
+  margin-right: 20px;
+}
+
+.tiktok {
+  background-image: url('https://upload.wikimedia.org/wikipedia/id/a/a9/TikTok_logo.svg');
+  margin-right: 20px;
+}
+
+.telegram {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg');
+  margin-right: 20px;
+}

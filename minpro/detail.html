@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-detail.css">
+    <script src="script.js"></script>
+    <title>Detail Konser</title>
+</head>
+<body>
+    <header>
+        <div class="atas">
+          <a href="index.php" class="logo"></s><img src="konser.jpg" alt=""></a>
+          <div class="topnav">
+            <!-- <a class="active" href="#home">Home</a> -->
+            <a href="">login</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <select name="Kategori" id="kategori">
+              <option value='populer'>Populer</option>
+              <option value='on going'>On Going</option>
+              <option value='terdekat'>Terdekat</option>
+            </select>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <form class="search" action="action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+    <h5 class="back">
+        <a href="index.php" class="back-link"> << Home </a>
+    </h5>
+
+
+    <main>
+        <section>
+                <table>
+                    <tr>
+                        <td>
+                            <img class="pict1" src="tiketdetail1.jpg" alt="Poster Konser 1">
+                        </td>
+                        <td>                        
+                            <div id="keterangan">
+                                <h3>Jesse Barrera & Albert Posis - The Hold On Tight Tour</h3>
+                                <!-- <br> -->
+                                <div class="detail-icon">
+                                    <span class="icon">&#128197;</span> <!-- Kalender -->
+                                    <p class="tgl-konser">23 Mei 2024</p>
+                                </div>
+                                <div class="detail-icon">
+                                    <span class="icon">&#128339;</span> <!-- Jam -->
+                                    <p>19.00 - 22.00 WIB</p>
+                                </div>
+                                <div class="detail-icon">
+                                    <span class="icon">&#128204;</span> <!-- Lokasi -->
+                                    <a href="https://www.google.com/maps/place/The+Kasablanka/@-6.223651,106.8402387,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f38cc147f145:0x3225ec9b7b7adc0c!8m2!3d-6.223651!4d106.8428136!16s%2Fg%2F11c0pzwnp5?entry=ttu">
+                                        <p>Aruba Hall, The Kasablanka, DKI Jakarta</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="gambar" src="seatingplan1.jpg" alt="Seating Plan Konser 1">
+                        </td>
+                        <td>
+                            <!-- <div class="tiket"> -->
+                                <div class="tiket-grup">
+                                <h4>Paket Tiket</h4>
+                                    <ul>
+                                        <li class="tkt1">
+                                            VIP (STANDING)<br> Rp 1.250.000
+                                            <br>
+                                            <br>
+                                            <a class="stok1">SOLD OUT</a>
+                                        </li>
+                                        <li class="tkt2">
+                                            CAT 1 (STANDING)<br> Rp 800.000 
+                                        
+                                            <!-- <br><a class="pesan" href="pemesanan.html">Pesan Tiket</a> -->
+                                            <br>
+                                            <br>
+                                            <a class="stok2">SOLD OUT</a></li>
+                                            <li class="tkt3">
+                                                CAT 2 (STANDING)<br> Rp 650.000
+                                                <p> Jumlah Tiket
+                                                    <input id="jml-tkt" type="number" name="qty_vip" min="0" value="0" max="5" oninput="if(this.value > 5) this.value = 5;"> 
+                                                </p>
+                                                <a class="pesan" href="pemesanan.html">Pesan Tiket</a> 
+                                                <a class="stok3">Available: 200</a>
+                                            </li>
+
+                                    </ul>
+                                </div>
+                            </div>        
+                        </td>
+                    </tr>
+                </table>
+
+            </section>
+
+            
+            
+        <div>
+            <h2 class="detil">DETAIL</h2>
+            <div class="det">
+                <p>Inside Indo & Livepass presents THE HOLD ON TIGHT TOUR!
+                    
+                    Jesse Barrera and Albert Posis are two talented musicians who have carved out their own unique spaces in the global music industry.
+                    
+                    <br>
+                    <br>Get ready to be swept away on an emotional journey with Jesse Barrera and Albert Posis on Hold On Tight Tour. Join them as they embark on a musical adventure filled with raw honesty, heartfelt melodies, and unforgettable moments. Let's hold on tight everyone! Because we promises this could be a concert you won't soon forget.
+                    
+                    <br>
+                    <br>Look forward to singing with you guys on Thursday, 23rd May 2024. Get your tickets and prepare for an unforgettable night!
+                    <br>
+                    <h5 class="notes">Notes:</h5>
+                            <ol class="notes-isi">
+                                <li>
+                                    The concert is standing for all ticket categories, no seats available.
+                                </li>
+                                <li>
+                                    Ticket price excludes Government Tax 10%, admin fee 5%, and convenience fee.
+                                </li>
+                                <li>
+                                    Locations indicated are for visual purposes only-actual location/size may differ slightly.                    
+                                </li>
+                            </ol>  
+            </div>
+        </div> 
+
+        <div>
+            <h2 class="sk">SYARAT DAN KETENTUAN</h2>
+            <div class="sk-isi">
+                <ol>
+                    <li>
+                        Tickets can only be purchased through Loket.com, tickets can only be used into The Hold On Tight Tour Jakarta 2024.
+                        <br><p class="merah">Tiket hanya dapat dibeli melalui Loket.com, tiket hanya dapat digunakan untuk masuk ke acara konser The Hold On Tight Tour.</p>
+                    </li>
+                    <li>
+                        Ticket price excludes Government Tax 10%, admin fee 5%, convenience fee and any other applicable charges.
+                        <br><p class="merah">Harga Tiket tidak termasuk pajak 10%, biaya admin 5%, dan biaya lainnya.</p>
+                    </li>
+                    <li>
+                        Make sure your ticket purchase has used valid and correct data. (ID Card/KTP/KK/Student Card/SIM/Passport). Your ticket cannot be changed and/or modified once the purchase has been made.
+                        <br><p class="merah">Pastikan Anda melakukan pembelian tiket dengan menggunakan data Anda yang sah dan benar (Kartu Identitas/Kartu Pelajar/KTP/KK/SIM/Paspor). Tiket Anda tidak dapat di ubah dan/atau dimodifikasi setelah pembelian sudah dilakukan.</p>                
+                    </li>
+                    <li>
+                        Purchased tickets cannot be exchanged, cashed out, or refunded.
+                        <br><p class="merah">Tiket yang sudah dibeli tidak dapat di tukar, diuangkan ataupun di kembalikan.</p>
+                    </li>
+                    <li>
+                        After successfully purchasing a ticket, an e-ticket will be sent to your email, which will be exchanged for a wristband.
+                        <br><p class="merah">Setelah berhasil melakukan pembelian tiket, e-ticket akan dikirimkan ke email, yang nantinya akan ditukarkan dengan gelang tiket.</p>
+                    </li>
+                    <li>
+                        Please bring a valid ID card/KK/Passport/Driving License/Student Card with your personal information that matches on the e-ticket in order to redeem your Wristband/Tickets.
+                        <br><p class="merah">Dimohon untuk membawa KTP/KK/Passport/SIM/Kartu Pelajar asli sesuai dengan data yang tertera di e-ticket pada saat penukaran gelang tiket.</p>
+                    </li>
+                    <li>
+                        Details of the time and place of wristband redemption will be informed through Inside Indo's social media.
+                        <br><p class="merah">Detail waktu dan tempat penukaran gelang tiket akan di informasikan melalui media sosial Inside Indo (@insideindo.co.id).</p>
+                    </li>
+                    <li>
+                        No replacement wristbands will be issued under any circumstances if lost & damaged due to personal reasons. Promoter will not be responsible for any lost, stolen, and/or damaged wristband(s).
+                        <br><p class="merah">Tidak ada gelang tiket pengganti yang akan dikeluarkan dalam kondisi apa pun jika hilang & rusak karena alasan apapun. Penyelenggara tidak bertanggung jawab atas gelang tiket yang hilang, dicuri atau rusak.</p>
+                    </li>
+                    <li>
+                        Only ticket holders with valid wristbands will be permitted to enter the venue, if the ticket is transferred, the ticket holder must bring a copy of the ticket buyer's identity.
+                        <br><p class="merah">Hanya pemilik gelang tiket yang valid yang dapat masuk ke dalam tempat pertunjukan, apabila tiket dipindahtangankan, penerima tiket wajib membawa copy identitas pembeli tiket.</p>
+                    </li>
+                    <li>
+                        Be careful using your e-ticket, because the unique barcode can only be scanned 1 (one) time. Once you have obtained your wristband and entered the event area, you will not be allowed to leave the area and re-enter (no re-entry).
+                        <br><p class="merah">Berhati-hatilah menggunakan e-ticket Anda, karena unique barcode hanya dapat di scan sebanyak 1 (satu) kali. Setelah Anda memperoleh gelang tiket dan masuk ke area acara, Anda tidak akan diperbolehkan untuk keluar area dan masuk kembali (no re-entry).</p>
+                    </li>
+                    <li>
+                        The organizer reserves the right to refuse entry and/or evict persons who do not comply with the terms and conditions of the event.
+                        <br><p class="merah">Penyelenggara berhak untuk menolak masuk dan/atau mengeluarkan orang-orang yang tidak mentaati syarat dan ketentuan acara.</p>
+                    </li>
+                    <li>
+                        Promoter reserves the right to change or add to any of the terms & conditions without prior notice.
+                        <br><p class="merah">Penyelenggara memiliki hak untuk mengubah ataupun menambahkan syarat-syarat di syarat & ketentuan tanpa pemberitahuan lebih dahulu.</p>
+                    </li>
+                    <li>
+                        All ticket holders are prohibited from smoking (including e-cigarettes) at the concert venue.
+                        <br><p class="merah">Seluruh pemegang tiket tidak diperkenankan untuk merokok (termasuk rokok elektrik) di area konser.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="konser.jpg" alt="seru">
+        <p>&copy; 2024 Konser Live. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send?phone=6281234567890" class="icon whatsapp"></a>
+            <a href="https://www.instagram.com/carolimanuella/" class="icon instagram"></a>
+            <a href="#" class="icon facebook"></a>
+            <a href="#" class="icon tiktok"></a>
+            <a href="#" class="icon telegram"></a>
+        </div>
+    </footer>
+</body>
+</html>
